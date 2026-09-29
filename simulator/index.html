@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EV Data Simulator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <header>
+
+        <div>
+            <h1>EV Data Simulator</h1>
+            <p>Real-Time Electric Vehicle Data</p>
+        </div>
+
+        <div class="vehicle">
+            <span>Vehicle</span>
+            <strong>EV001</strong>
+        </div>
+
+    </header>
+
+
+    <!-- CONTROL -->
+    <section class="control">
+
+        <div>
+
+            <div class="label">
+                Simulation Mode
+            </div>
+
+            <div class="modes">
+
+                <button id="normalBtn"
+                        class="mode active">
+                    NORMAL
+                </button>
+
+                <button id="abnormalBtn"
+                        class="mode">
+                    ABNORMAL
+                </button>
+
+                <button id="randomBtn"
+                        class="mode">
+                    RANDOM
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="control-right">
+
+            <div id="runningWrap" class="running">
+
+                <span id="dot"
+                      class="dot">
+                </span>
+
+                <span id="runningText">
+                    STOPPED
+                </span>
+
+            </div>
+
+
+            <button id="toggleBtn"
+                    class="start">
+                ▶ START
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- COUNTDOWN -->
+    <section id="countdownSection" class="countdown idle">
+
+        <div class="countdown-title">
+            NEXT UPDATE
+        </div>
+
+        <div id="countdown">
+            &ndash;
+        </div>
+
+        <div class="seconds" id="countdownHint">
+            press start to begin
+        </div>
+
+    </section>
+
+
+    <!-- OVERALL STATUS -->
+    <div id="overall"
+         class="overall normal">
+
+        ✓ VEHICLE STATUS: NORMAL
+
+    </div>
+
+
+    <!-- CURRENT DATA -->
+    <section>
+
+        <div class="title-row">
+
+            <h2>Current EV Status</h2>
+
+            <span>
+                Updated every 5 seconds
+            </span>
+
+        </div>
+
+
+        <div class="data-list">
+
+
+            <!-- SOC -->
+
+            <div class="data-row">
+
+                <div class="name">
+                    SOC
+                </div>
+
+                <div id="soc"
+                     class="number">
+                    85
+                </div>
+
+                <div class="unit">
+                    %
+                </div>
+
+                <div id="socStatus"
+                     class="badge normal">
+                    NORMAL
+                </div>
+
+            </div>
+
+
+            <!-- VOLTAGE -->
+
+            <div class="data-row">
+
+                <div class="name">
+                    Voltage
+                </div>
+
+                <div id="voltage"
+                     class="number">
+                    380
+                </div>
+
+                <div class="unit">
+                    V
+                </div>
+
+                <div id="voltageStatus"
+                     class="badge normal">
+                    NORMAL
+                </div>
+
+            </div>
+
+
+            <!-- BATTERY TEMPERATURE -->
+
+            <div class="data-row">
+
+                <div class="name">
+                    Battery Temperature
+                </div>
+
+                <div id="batteryTemp"
+                     class="number">
+                    32
+                </div>
+
+                <div class="unit">
+                    °C
+                </div>
+
+                <div id="batteryTempStatus"
+                     class="badge normal">
+                    NORMAL
+                </div>
+
+            </div>
+
+
+            <!-- MOTOR RPM -->
+
+            <div class="data-row">
+
+                <div class="name">
+                    Motor RPM
+                </div>
+
+                <div id="motorRpm"
+                     class="number">
+                    3500
+                </div>
+
+                <div class="unit">
+                    RPM
+                </div>
+
+                <div id="motorRpmStatus"
+                     class="badge normal">
+                    NORMAL
+                </div>
+
+            </div>
+
+
+            <!-- MOTOR POWER -->
+
+            <div class="data-row">
+
+                <div class="name">
+                    Motor Power
+                </div>
+
+                <div id="motorPower"
+                     class="number">
+                    45
+                </div>
+
+                <div class="unit">
+                    kW
+                </div>
+
+                <div id="motorPowerStatus"
+                     class="badge normal">
+                    NORMAL
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HISTORY -->
+    <section class="history">
+
+        <div class="title-row">
+
+            <h2>Latest Data</h2>
+
+            <span>
+                Last 10 records
+            </span>
+
+        </div>
+
+
+        <div class="table-box">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Time</th>
+
+                        <th>SOC</th>
+
+                        <th>Voltage</th>
+
+                        <th>Battery Temp</th>
+
+                        <th>Motor RPM</th>
+
+                        <th>Motor Power</th>
+
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="history">
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
