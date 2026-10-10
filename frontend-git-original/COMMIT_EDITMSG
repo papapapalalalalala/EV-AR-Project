@@ -1,0 +1,13 @@
+fix: แก้ label/value ในการ์ด Battery ทับกัน (Voltage/Temp row ไม่ยืดเต็มความกว้าง)
+
+StatsCol (VerticalLayoutGroup) ไม่ได้ตั้ง childControlWidth=true ทำให้แถว
+VoltageRow/TempRow แต่ละแถวใช้ความกว้าง default ของ RectTransform (แคบกว่า
+การ์ดจริงมาก) แทนที่จะยืดเต็มความกว้างการ์ด (476 units) - เมื่อค่าจริงมาแทน
+placeholder "-" ตัวหนังสือ label (ซ้าย) กับ value (ขวา) เลยไปทับกัน
+ยืนยันจากภาพหน้าจอ iPad จริง (364 V / 42°C ทับกับ Voltage/Temp)
+
+เพิ่ม sLayout.childControlWidth = true ใน BuildWorldPanel() ให้ VerticalLayoutGroup
+ควบคุมความกว้างแถวให้ตรงกับการ์ดจริง
+
+Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01PsviR2KVe7VRWYwktqp6ui

@@ -1,0 +1,251 @@
+ frontend                                           |      1 [31m-[m
+ frontend/.github/workflows/ios-build.yml           |     80 [32m+[m
+ frontend/.gitignore                                |     58 [32m+[m
+ frontend/.metadata                                 |     30 [32m+[m
+ frontend/README.md                                 |     17 [32m+[m
+ frontend/analysis_options.yaml                     |     38 [32m+[m
+ frontend/ios/.gitignore                            |     34 [32m+[m
+ frontend/ios/Flutter/AppFrameworkInfo.plist        |     24 [32m+[m
+ frontend/ios/Flutter/Debug.xcconfig                |      1 [32m+[m
+ frontend/ios/Flutter/Release.xcconfig              |      1 [32m+[m
+ frontend/ios/Runner.xcodeproj/project.pbxproj      |    647 [32m+[m
+ .../project.xcworkspace/contents.xcworkspacedata   |      7 [32m+[m
+ .../xcshareddata/IDEWorkspaceChecks.plist          |      8 [32m+[m
+ .../xcshareddata/WorkspaceSettings.xcsettings      |      8 [32m+[m
+ .../xcshareddata/xcschemes/Runner.xcscheme         |    119 [32m+[m
+ .../Runner.xcworkspace/contents.xcworkspacedata    |      7 [32m+[m
+ .../xcshareddata/IDEWorkspaceChecks.plist          |      8 [32m+[m
+ .../xcshareddata/WorkspaceSettings.xcsettings      |      8 [32m+[m
+ frontend/ios/Runner/AppDelegate.swift              |     16 [32m+[m
+ .../AppIcon.appiconset/Contents.json               |    122 [32m+[m
+ .../AppIcon.appiconset/Icon-App-1024x1024@1x.png   |    Bin [31m0[m -> [32m10932[m bytes
+ .../AppIcon.appiconset/Icon-App-20x20@1x.png       |    Bin [31m0[m -> [32m295[m bytes
+ .../AppIcon.appiconset/Icon-App-20x20@2x.png       |    Bin [31m0[m -> [32m406[m bytes
+ .../AppIcon.appiconset/Icon-App-20x20@3x.png       |    Bin [31m0[m -> [32m450[m bytes
+ .../AppIcon.appiconset/Icon-App-29x29@1x.png       |    Bin [31m0[m -> [32m282[m bytes
+ .../AppIcon.appiconset/Icon-App-29x29@2x.png       |    Bin [31m0[m -> [32m462[m bytes
+ .../AppIcon.appiconset/Icon-App-29x29@3x.png       |    Bin [31m0[m -> [32m704[m bytes
+ .../AppIcon.appiconset/Icon-App-40x40@1x.png       |    Bin [31m0[m -> [32m406[m bytes
+ .../AppIcon.appiconset/Icon-App-40x40@2x.png       |    Bin [31m0[m -> [32m586[m bytes
+ .../AppIcon.appiconset/Icon-App-40x40@3x.png       |    Bin [31m0[m -> [32m862[m bytes
+ .../AppIcon.appiconset/Icon-App-60x60@2x.png       |    Bin [31m0[m -> [32m862[m bytes
+ .../AppIcon.appiconset/Icon-App-60x60@3x.png       |    Bin [31m0[m -> [32m1674[m bytes
+ .../AppIcon.appiconset/Icon-App-76x76@1x.png       |    Bin [31m0[m -> [32m762[m bytes
+ .../AppIcon.appiconset/Icon-App-76x76@2x.png       |    Bin [31m0[m -> [32m1226[m bytes
+ .../AppIcon.appiconset/Icon-App-83.5x83.5@2x.png   |    Bin [31m0[m -> [32m1418[m bytes
+ .../LaunchImage.imageset/Contents.json             |     23 [32m+[m
+ .../LaunchImage.imageset/LaunchImage.png           |    Bin [31m0[m -> [32m68[m bytes
+ .../LaunchImage.imageset/LaunchImage@2x.png        |    Bin [31m0[m -> [32m68[m bytes
+ .../LaunchImage.imageset/LaunchImage@3x.png        |    Bin [31m0[m -> [32m68[m bytes
+ .../Assets.xcassets/LaunchImage.imageset/README.md |      5 [32m+[m
+ .../ios/Runner/Base.lproj/LaunchScreen.storyboard  |     37 [32m+[m
+ frontend/ios/Runner/Base.lproj/Main.storyboard     |     26 [32m+[m
+ frontend/ios/Runner/Info.plist                     |     72 [32m+[m
+ frontend/ios/Runner/Runner-Bridging-Header.h       |      1 [32m+[m
+ frontend/ios/Runner/SceneDelegate.swift            |      6 [32m+[m
+ frontend/ios/RunnerTests/RunnerTests.swift         |     12 [32m+[m
+ frontend/ios/UnityExport/Classes/CrashReporter.h   |     32 [32m+[m
+ frontend/ios/UnityExport/Classes/CrashReporter.mm  |    108 [32m+[m
+ frontend/ios/UnityExport/Classes/PLCrashReporter.h |    102 [32m+[m
+ .../Classes/PluginBase/AppDelegateListener.h       |     37 [32m+[m
+ .../Classes/PluginBase/AppDelegateListener.mm      |     63 [32m+[m
+ .../Classes/PluginBase/LifeCycleListener.h         |     29 [32m+[m
+ .../Classes/PluginBase/LifeCycleListener.mm        |     39 [32m+[m
+ .../Classes/PluginBase/RenderPluginDelegate.h      |     67 [32m+[m
+ .../Classes/PluginBase/RenderPluginDelegate.mm     |     90 [32m+[m
+ .../PluginBase/UnityViewControllerListener.h       |     51 [32m+[m
+ .../PluginBase/UnityViewControllerListener.mm      |     80 [32m+[m
+ frontend/ios/UnityExport/Classes/Prefix.pch        |     23 [32m+[m
+ frontend/ios/UnityExport/Classes/Preprocessor.h    |    238 [32m+[m
+ frontend/ios/UnityExport/Classes/Quaternion4.h     |    118 [32m+[m
+ .../ios/UnityExport/Classes/RedefinePlatforms.h    |     43 [32m+[m
+ .../ios/UnityExport/Classes/UI/ActivityIndicator.h |      5 [32m+[m
+ .../UnityExport/Classes/UI/ActivityIndicator.mm    |     49 [32m+[m
+ frontend/ios/UnityExport/Classes/UI/Keyboard.h     |     75 [32m+[m
+ frontend/ios/UnityExport/Classes/UI/Keyboard.mm    |   1268 [32m+[m
+ .../UnityExport/Classes/UI/OrientationSupport.h    |     20 [32m+[m
+ .../UnityExport/Classes/UI/OrientationSupport.mm   |    165 [32m+[m
+ frontend/ios/UnityExport/Classes/UI/StoreReview.m  |     18 [32m+[m
+ .../Classes/UI/UnityAppController+ViewHandling.h   |    105 [32m+[m
+ .../Classes/UI/UnityAppController+ViewHandling.mm  |    475 [32m+[m
+ frontend/ios/UnityExport/Classes/UI/UnityScene.h   |      5 [32m+[m
+ frontend/ios/UnityExport/Classes/UI/UnityScene.mm  |    126 [32m+[m
+ .../UnityExport/Classes/UI/UnityView+Keyboard.mm   |    268 [32m+[m
+ .../ios/UnityExport/Classes/UI/UnityView+iOS.h     |     15 [32m+[m
+ .../ios/UnityExport/Classes/UI/UnityView+iOS.mm    |    137 [32m+[m
+ .../ios/UnityExport/Classes/UI/UnityView+tvOS.h    |     15 [32m+[m
+ .../ios/UnityExport/Classes/UI/UnityView+tvOS.mm   |     66 [32m+[m
+ frontend/ios/UnityExport/Classes/UI/UnityView.h    |     71 [32m+[m
+ frontend/ios/UnityExport/Classes/UI/UnityView.mm   |    437 [32m+[m
+ .../Classes/UI/UnityViewControllerBase+iOS.h       |     62 [32m+[m
+ .../Classes/UI/UnityViewControllerBase+iOS.mm      |    320 [32m+[m
+ .../Classes/UI/UnityViewControllerBase+tvOS.h      |      7 [32m+[m
+ .../Classes/UI/UnityViewControllerBase+tvOS.mm     |      9 [32m+[m
+ .../Classes/UI/UnityViewControllerBase+visionOS.h  |      7 [32m+[m
+ .../Classes/UI/UnityViewControllerBase+visionOS.mm |      9 [32m+[m
+ .../Classes/UI/UnityViewControllerBase.h           |     42 [32m+[m
+ .../Classes/UI/UnityViewControllerBase.mm          |     90 [32m+[m
+ .../ios/UnityExport/Classes/UndefinePlatforms.h    |     35 [32m+[m
+ frontend/ios/UnityExport/Classes/Unity/AVCapture.h |     16 [32m+[m
+ .../ios/UnityExport/Classes/Unity/AVCapture.mm     |     50 [32m+[m
+ .../UnityExport/Classes/Unity/CMVideoSampling.h    |     19 [32m+[m
+ .../UnityExport/Classes/Unity/CMVideoSampling.mm   |     79 [32m+[m
+ .../ios/UnityExport/Classes/Unity/CVTextureCache.h |     47 [32m+[m
+ .../UnityExport/Classes/Unity/CVTextureCache.mm    |    144 [32m+[m
+ .../ios/UnityExport/Classes/Unity/CameraCapture.h  |     72 [32m+[m
+ .../ios/UnityExport/Classes/Unity/CameraCapture.mm |    853 [32m+[m
+ .../UnityExport/Classes/Unity/DeviceSettings.mm    |    628 [32m+[m
+ .../ios/UnityExport/Classes/Unity/DisplayManager.h |     71 [32m+[m
+ .../UnityExport/Classes/Unity/DisplayManager.mm    |    850 [32m+[m
+ .../ios/UnityExport/Classes/Unity/Filesystem.mm    |    133 [32m+[m
+ .../Classes/Unity/FullScreenVideoPlayer.mm         |    268 [32m+[m
+ .../UnityExport/Classes/Unity/IUnityEventQueue.h   |    442 [32m+[m
+ .../ios/UnityExport/Classes/Unity/IUnityGraphics.h |     64 [32m+[m
+ .../Classes/Unity/IUnityGraphicsMetal.h            |    117 [32m+[m
+ .../UnityExport/Classes/Unity/IUnityInterface.h    |    206 [32m+[m
+ frontend/ios/UnityExport/Classes/Unity/IUnityLog.h |     37 [32m+[m
+ .../Classes/Unity/IUnityMemoryManager.h            |     24 [32m+[m
+ .../Classes/Unity/IUnityPhysicsBackendSystem.h     |     99 [32m+[m
+ .../ios/UnityExport/Classes/Unity/IUnityProfiler.h |    511 [32m+[m
+ .../Classes/Unity/IUnityProfilerCallbacks.h        |    174 [32m+[m
+ .../Classes/Unity/IUnityRenderingExtensions.h      |    379 [32m+[m
+ .../UnityExport/Classes/Unity/InternalProfiler.cpp |    375 [32m+[m
+ .../UnityExport/Classes/Unity/InternalProfiler.h   |     32 [32m+[m
+ .../ios/UnityExport/Classes/Unity/MetalHelper.mm   |    228 [32m+[m
+ .../UnityExport/Classes/Unity/NoGraphicsHelper.mm  |     28 [32m+[m
+ .../ios/UnityExport/Classes/Unity/ObjCRuntime.h    |     35 [32m+[m
+ .../UnityExport/Classes/Unity/OnDemandResources.mm |    106 [32m+[m
+ .../UnityExport/Classes/Unity/UnityForwardDecls.h  |    145 [32m+[m
+ .../ios/UnityExport/Classes/Unity/UnityInterface.h |    441 [32m+[m
+ .../ios/UnityExport/Classes/Unity/UnityRendering.h |    378 [32m+[m
+ .../ios/UnityExport/Classes/Unity/UnityReplayKit.h |     53 [32m+[m
+ .../UnityExport/Classes/Unity/UnityReplayKit.mm    |    563 [32m+[m
+ .../Classes/Unity/UnityReplayKit_Scripting.mm      |    207 [32m+[m
+ .../UnityExport/Classes/Unity/UnitySharedDecls.h   |    134 [32m+[m
+ .../Classes/Unity/UnityTrampolineCompatibility.h   |      5 [32m+[m
+ .../UnityExport/Classes/Unity/UnityWebRequest.mm   |    558 [32m+[m
+ .../ios/UnityExport/Classes/Unity/VideoPlayer.h    |     53 [32m+[m
+ .../ios/UnityExport/Classes/Unity/VideoPlayer.mm   |    495 [32m+[m
+ .../UnityAppController+Rendering+visionOS.h        |     16 [32m+[m
+ .../UnityAppController+Rendering+visionOS.mm       |    117 [32m+[m
+ .../Classes/UnityAppController+Rendering.h         |     61 [32m+[m
+ .../Classes/UnityAppController+Rendering.mm        |    393 [32m+[m
+ .../Classes/UnityAppController+Thermal.h           |     10 [32m+[m
+ .../Classes/UnityAppController+Thermal.mm          |     73 [32m+[m
+ .../Classes/UnityAppController+UnityInterface.h    |     10 [32m+[m
+ .../Classes/UnityAppController+UnityInterface.mm   |     19 [32m+[m
+ .../ios/UnityExport/Classes/UnityAppController.h   |    177 [32m+[m
+ .../ios/UnityExport/Classes/UnityAppController.mm  |    904 [32m+[m
+ .../UnityExport/Classes/UnityTrampolineConfigure.h |     53 [32m+[m
+ frontend/ios/UnityExport/Classes/Vector3.h         |     40 [32m+[m
+ frontend/ios/UnityExport/Classes/iPhone_Sensors.h  |     34 [32m+[m
+ frontend/ios/UnityExport/Classes/iPhone_Sensors.mm |   1168 [32m+[m
+ frontend/ios/UnityExport/Classes/main.mm           |    175 [32m+[m
+ .../Data/Managed/Metadata/global-metadata.dat      |    Bin [31m0[m -> [32m12912804[m bytes
+ .../Resources/Newtonsoft.Json.dll-resources.dat    |    Bin [31m0[m -> [32m900[m bytes
+ .../Resources/System.Data.dll-resources.dat        |    Bin [31m0[m -> [32m93718[m bytes
+ .../Resources/System.Drawing.dll-resources.dat     |    Bin [31m0[m -> [32m25453[m bytes
+ .../Managed/Resources/mscorlib.dll-resources.dat   |    Bin [31m0[m -> [32m337563[m bytes
+ .../Data/Managed/mono/4.0/machine.config           |    307 [32m+[m
+ .../Data/Resources/unity default resources         |    Bin [31m0[m -> [32m1701700[m bytes
+ .../UnityExport/Data/Resources/unity_builtin_extra |    Bin [31m0[m -> [32m461088[m bytes
+ .../UnityExport/Data/RuntimeInitializeOnLoads.json |      1 [32m+[m
+ .../ios/UnityExport/Data/ScriptingAssemblies.json  |      1 [32m+[m
+ .../UnityARKit/UnitySubsystemsManifest.json        |     13 [32m+[m
+ frontend/ios/UnityExport/Data/boot.config          |      5 [32m+[m
+ frontend/ios/UnityExport/Data/globalgamemanagers   |    Bin [31m0[m -> [32m276820[m bytes
+ .../ios/UnityExport/Data/globalgamemanagers.assets |    Bin [31m0[m -> [32m1132004[m bytes
+ .../Data/globalgamemanagers.assets.resS            |    Bin [31m0[m -> [32m4169408[m bytes
+ frontend/ios/UnityExport/Data/level0               |    Bin [31m0[m -> [32m762360[m bytes
+ frontend/ios/UnityExport/Data/resources.assets     |    Bin [31m0[m -> [32m10773400[m bytes
+ .../ios/UnityExport/Data/resources.assets.resS     |    Bin [31m0[m -> [32m2098912[m bytes
+ frontend/ios/UnityExport/Data/sharedassets0.assets |    Bin [31m0[m -> [32m1063648[m bytes
+ .../ios/UnityExport/Data/sharedassets0.assets.resS |    Bin [31m0[m -> [32m3981088[m bytes
+ frontend/ios/UnityExport/Frameworks/README.txt     |      3 [32m+[m
+ .../IL2CPP/build/deploy_arm64/Analytics            |    Bin [31m0[m -> [32m123264[m bytes
+ .../build/deploy_arm64/Analytics.Api.Output.dll    |    Bin [31m0[m -> [32m11264[m bytes
+ .../build/deploy_arm64/Analytics.Api.Output.pdb    |    Bin [31m0[m -> [32m10648[m bytes
+ .../build/deploy_arm64/Analytics.Api.Output.xml    |    219 [32m+[m
+ .../IL2CPP/build/deploy_arm64/Analytics.deps.json  |    890 [32m+[m
+ .../IL2CPP/build/deploy_arm64/Analytics.dll        |    Bin [31m0[m -> [32m33792[m bytes
+ .../IL2CPP/build/deploy_arm64/Analytics.pdb        |    Bin [31m0[m -> [32m21076[m bytes
+ .../deploy_arm64/Analytics.runtimeconfig.json      |     17 [32m+[m
+ .../IL2CPP/build/deploy_arm64/Bee.BeeDriver2.dll   |    Bin [31m0[m -> [32m120320[m bytes
+ .../IL2CPP/build/deploy_arm64/Bee.BeeDriver2.pdb   |    Bin [31m0[m -> [32m44632[m bytes
+ .../IL2CPP/build/deploy_arm64/Bee.BinLog.dll       |    Bin [31m0[m -> [32m18944[m bytes
+ .../IL2CPP/build/deploy_arm64/Bee.BinLog.pdb       |    Bin [31m0[m -> [32m11860[m bytes
+ .../IL2CPP/build/deploy_arm64/Bee.BinLog.xml       |    247 [32m+[m
+ .../IL2CPP/build/deploy_arm64/Bee.Core.dll         |    Bin [31m0[m -> [32m158208[m bytes
+ .../IL2CPP/build/deploy_arm64/Bee.Core.pdb         |    Bin [31m0[m -> [32m57100[m bytes
+ .../deploy_arm64/Bee.NativeProgramSupport.dll      |    Bin [31m0[m -> [32m183296[m bytes
+ .../deploy_arm64/Bee.NativeProgramSupport.pdb      |    Bin [31m0[m -> [32m57732[m bytes
+ .../build/deploy_arm64/Bee.Stevedore.Program.dll   |    Bin [31m0[m -> [32m120832[m bytes
+ .../build/deploy_arm64/Bee.Stevedore.Program.pdb   |    Bin [31m0[m -> [32m39644[m bytes
+ .../IL2CPP/build/deploy_arm64/Bee.Telemetry.dll    |    Bin [31m0[m -> [32m5632[m bytes
+ .../IL2CPP/build/deploy_arm64/Bee.Telemetry.pdb    |    Bin [31m0[m -> [32m11776[m bytes
+ .../build/deploy_arm64/Bee.TinyProfiler2.dll       |    Bin [31m0[m -> [32m20480[m bytes
+ .../build/deploy_arm64/Bee.TinyProfiler2.pdb       |    Bin [31m0[m -> [32m15764[m bytes
+ .../build/deploy_arm64/Bee.Toolchain.Android.dll   |    Bin [31m0[m -> [32m62976[m bytes
+ .../build/deploy_arm64/Bee.Toolchain.Android.pdb   |    Bin [31m0[m -> [32m24052[m bytes
+ .../deploy_arm64/Bee.Toolchain.EmbeddedLinux.dll   |    Bin [31m0[m -> [32m36864[m bytes
+ .../deploy_arm64/Bee.Toolchain.EmbeddedLinux.pdb   |    Bin [31m0[m -> [32m18380[m bytes
+ .../deploy_arm64/Bee.Toolchain.Emscripten.dll      |    Bin [31m0[m -> [32m69120[m bytes
+ .../deploy_arm64/Bee.Toolchain.Emscripten.pdb      |    Bin [31m0[m -> [32m23204[m bytes
+ .../build/deploy_arm64/Bee.Toolchain.GNU.dll       |    Bin [31m0[m -> [32m67072[m bytes
+ .../build/deploy_arm64/Bee.Toolchain.GNU.pdb       |    Bin [31m0[m -> [32m22104[m bytes
+ .../build/deploy_arm64/Bee.Toolchain.IOS.dll       |    Bin [31m0[m -> [32m12800[m bytes
+ .../build/deploy_arm64/Bee.Toolchain.IOS.pdb       |    Bin [31m0[m -> [32m13888[m bytes
+ .../build/deploy_arm64/Bee.Toolchain.LLVM.dll      |    Bin [31m0[m -> [32m23040[m bytes
+ .../build/deploy_arm64/Bee.Toolchain.LLVM.pdb      |    Bin [31m0[m -> [32m14540[m bytes
+ .../build/deploy_arm64/Bee.Toolchain.Linux.dll     |    Bin [31m0[m -> [32m34304[m bytes
+ .../build/deploy_arm64/Bee.Toolchain.Linux.pdb     |    Bin [31m0[m -> [32m18812[m bytes
+ .../build/deploy_arm64/Bee.Toolchain.MacOS.dll     |    Bin [31m0[m -> [32m14848[m bytes
+ .../build/deploy_arm64/Bee.Toolchain.MacOS.pdb     |    Bin [31m0[m -> [32m14000[m bytes
+ .../build/deploy_arm64/Bee.Toolchain.TvOS.dll      |    Bin [31m0[m -> [32m11264[m bytes
+ .../build/deploy_arm64/Bee.Toolchain.TvOS.pdb      |    Bin [31m0[m -> [32m13496[m bytes
+ .../build/deploy_arm64/Bee.Toolchain.UWP.dll       |    Bin [31m0[m -> [32m32768[m bytes
+ .../build/deploy_arm64/Bee.Toolchain.UWP.pdb       |    Bin [31m0[m -> [32m16200[m bytes
+ .../build/deploy_arm64/Bee.Toolchain.VisionOS.dll  |    Bin [31m0[m -> [32m12288[m bytes
+ .../build/deploy_arm64/Bee.Toolchain.VisionOS.pdb  |    Bin [31m0[m -> [32m13668[m bytes
+ .../deploy_arm64/Bee.Toolchain.VisualStudio.dll    |    Bin [31m0[m -> [32m146944[m bytes
+ .../deploy_arm64/Bee.Toolchain.VisualStudio.pdb    |    Bin [31m0[m -> [32m40388[m bytes
+ .../build/deploy_arm64/Bee.Toolchain.Windows.dll   |    Bin [31m0[m -> [32m15872[m bytes
+ .../build/deploy_arm64/Bee.Toolchain.Windows.pdb   |    Bin [31m0[m -> [32m14392[m bytes
+ .../build/deploy_arm64/Bee.Toolchain.Xcode.dll     |    Bin [31m0[m -> [32m69120[m bytes
+ .../build/deploy_arm64/Bee.Toolchain.Xcode.pdb     |    Bin [31m0[m -> [32m25472[m bytes
+ .../IL2CPP/build/deploy_arm64/Bee.Tools.dll        |    Bin [31m0[m -> [32m73728[m bytes
+ .../IL2CPP/build/deploy_arm64/Bee.Tools.pdb        |    Bin [31m0[m -> [32m34304[m bytes
+ .../build/deploy_arm64/Bee.TundraBackend.dll       |    Bin [31m0[m -> [32m81920[m bytes
+ .../build/deploy_arm64/Bee.TundraBackend.pdb       |    Bin [31m0[m -> [32m31360[m bytes
+ .../deploy_arm64/Bee.VisualStudioSolution.dll      |    Bin [31m0[m -> [32m30208[m bytes
+ .../deploy_arm64/Bee.VisualStudioSolution.pdb      |    Bin [31m0[m -> [32m17120[m bytes
+ .../build/deploy_arm64/JetBrains.Profiler.Api.dll  |    Bin [31m0[m -> [32m18944[m bytes
+ .../build/deploy_arm64/Microsoft.Bcl.HashCode.dll  |    Bin [31m0[m -> [32m14440[m bytes
+ .../IL2CPP/build/deploy_arm64/Microsoft.CSharp.dll |    Bin [31m0[m -> [32m915208[m bytes
+ .../deploy_arm64/Microsoft.VisualBasic.Core.dll    |    Bin [31m0[m -> [32m1381648[m bytes
+ .../build/deploy_arm64/Microsoft.VisualBasic.dll   |    Bin [31m0[m -> [32m17680[m bytes
+ .../deploy_arm64/Microsoft.Win32.Primitives.dll    |    Bin [31m0[m -> [32m15640[m bytes
+ .../deploy_arm64/Microsoft.Win32.Registry.dll      |    Bin [31m0[m -> [32m33040[m bytes
+ .../IL2CPP/build/deploy_arm64/Mono.Cecil.Mdb.dll   |    Bin [31m0[m -> [32m39424[m bytes
+ .../IL2CPP/build/deploy_arm64/Mono.Cecil.Mdb.pdb   |    Bin [31m0[m -> [32m24040[m bytes
+ .../IL2CPP/build/deploy_arm64/Mono.Cecil.Pdb.dll   |    Bin [31m0[m -> [32m89600[m bytes
+ .../IL2CPP/build/deploy_arm64/Mono.Cecil.Pdb.pdb   |    Bin [31m0[m -> [32m34172[m bytes
+ .../IL2CPP/build/deploy_arm64/Mono.Cecil.Rocks.dll |    Bin [31m0[m -> [32m26624[m bytes
+ .../IL2CPP/build/deploy_arm64/Mono.Cecil.Rocks.pdb |    Bin [31m0[m -> [32m15236[m bytes
+ .../IL2CPP/build/deploy_arm64/Mono.Cecil.dll       |    Bin [31m0[m -> [32m359424[m bytes
+ .../IL2CPP/build/deploy_arm64/Mono.Cecil.pdb       |    Bin [31m0[m -> [32m193104[m bytes
+ .../IL2CPP/build/deploy_arm64/Newtonsoft.Json.dll  |    Bin [31m0[m -> [32m695336[m bytes
+ .../IL2CPP/build/deploy_arm64/NiceIO.dll           |    Bin [31m0[m -> [32m40960[m bytes
+ .../IL2CPP/build/deploy_arm64/NiceIO.pdb           |    Bin [31m0[m -> [32m22016[m bytes
+ .../IL2CPP/build/deploy_arm64/SharpYaml.dll        |    Bin [31m0[m -> [32m217600[m bytes
+ .../build/deploy_arm64/System.AppContext.dll       |    Bin [31m0[m -> [32m15640[m bytes
+ .../IL2CPP/build/deploy_arm64/System.Buffers.dll   |    Bin [31m0[m -> [32m15520[m bytes
+ .../deploy_arm64/System.Collections.Concurrent.dll |    Bin [31m0[m -> [32m288032[m bytes
+ .../deploy_arm64/System.Collections.Immutable.dll  |    Bin [31m0[m -> [32m853280[m bytes
+ .../deploy_arm64/System.Collections.NonGeneric.dll |    Bin [31m0[m -> [32m104720[m bytes
+ .../System.Collections.Specialized.dll             |    Bin [31m0[m -> [32m106760[m bytes
+ .../build/deploy_arm64/System.Collections.dll      |    Bin [31m0[m -> [32m286472[m bytes
+ .../System.ComponentModel.Annotations.dll          |    Bin [31m0[m -> [32m216336[m bytes
+ .../System.ComponentModel.DataAnnotations.dll      |    Bin [31m0[m -> [32m17160[m bytes
+ .../System.ComponentModel.EventBasedAsync.dll      |    Bin [31m0[m -> [32m38664[m bytes
+ .../System.ComponentModel.Primitives.dll           |    Bin [31m0[m -> [32m79

@@ -1,0 +1,18 @@
+0000000000000000000000000000000000000000 06c3d99799003bf9a2efb465d5af5e7405fb7d6d p <polovely55@gmail.com> 1789982302 +0000	commit (initial): Initial commit: Flutter app with exported Unity 6.3 iOS Xcode project for CI build
+06c3d99799003bf9a2efb465d5af5e7405fb7d6d f040a91595f2202b362ae652efd52fd101fde72a p <polovely55@gmail.com> 1789982486 +0000	commit: Add GitHub Actions iOS build workflow and Xcode wiring script
+f040a91595f2202b362ae652efd52fd101fde72a f040a91595f2202b362ae652efd52fd101fde72a p <polovely55@gmail.com> 1790004570 +0700	Branch: renamed refs/heads/main to refs/heads/main
+f040a91595f2202b362ae652efd52fd101fde72a f326f0bddf97c94e3327b27b6202e979888f8907 p <polovely55@gmail.com> 1790005032 +0000	commit: Fix: use absolute path for Unity subproject reference in wire_unity.rb
+f326f0bddf97c94e3327b27b6202e979888f8907 22261a4107116771d10c66c3004693fc16f8557b p <polovely55@gmail.com> 1790005406 +0000	commit: Fix: include_in_index must be a String, not Integer (xcodeproj type check)
+22261a4107116771d10c66c3004693fc16f8557b 059c248ee4f5c9bcc63c876e07fe60bfd2e22481 p <polovely55@gmail.com> 1790006585 +0000	commit: Add flutter_embed_unity iOS export transforms: disable bitcode, allow deferred symbol resolution, move Data folder to UnityFramework target
+059c248ee4f5c9bcc63c876e07fe60bfd2e22481 514e12a70eeb9a2b5f95979e1c244dea90af4bc5 p <polovely55@gmail.com> 1790016744 +0000	commit: เพิ่ม AR/Data/Graph tabs, โมเดล 3D Battery/Motor, และ Calibration Mode
+514e12a70eeb9a2b5f95979e1c244dea90af4bc5 0df0a2cd48b085e28251fdf4e630a019f4f743f6 p <polovely55@gmail.com> 1790064144 +0000	commit: แก้บั๊กแถบเมนูล่าง (AR/DATA/GRAPH) หายไปทั้งแถบ
+0df0a2cd48b085e28251fdf4e630a019f4f743f6 ca9d9b97294c6d88c1785c0799e72cdf015273d3 p <polovely55@gmail.com> 1790069847 +0000	commit: ปรับ AR layout เป็น External Inspection Point (แก้ Battery/Motor การ์ดทับกัน)
+ca9d9b97294c6d88c1785c0799e72cdf015273d3 8169078fa9f3af5ecf5b404f4fdf38fa9e3fe777 p <polovely55@gmail.com> 1790085096 +0000	commit: แก้แอป crash ตอนเปิด AR: rebuild IL2CPP ใหม่ทั้งหมดแบบ clean
+8169078fa9f3af5ecf5b404f4fdf38fa9e3fe777 737bea8c97ce0ef0f3630e73c712c63c4469edfe p <polovely55@gmail.com> 1790088525 +0000	commit: แก้แอป crash ตอนเปิด AR รอบ 2: ล้าง Player Data build cache ที่ค้างเก่า
+737bea8c97ce0ef0f3630e73c712c63c4469edfe 3e6d60b1c2a88843e8f2a2c63c6f93d44e96e4fa p <polovely55@gmail.com> 1790092354 +0000	commit: ปิด AR image tracking ชั่วคราว แก้ crash ตอนเปิดแอป + ปรับ UI การ์ดข้อมูล
+3e6d60b1c2a88843e8f2a2c63c6f93d44e96e4fa 46e481ceecba3da7859b1ec63b8abbdac62f6c2b p <polovely55@gmail.com> 1790093424 +0000	commit: แก้ commit ก่อนหน้า: Unity ยังไม่ recompile โค้ดตอน build รอบที่แล้ว
+46e481ceecba3da7859b1ec63b8abbdac62f6c2b 28dee2f51bc4ddba5e7971bb915a97b64c9f3389 p <polovely55@gmail.com> 1790094153 +0000	commit: เอาเส้น Line ที่ลากจาก Battery/Motor ออก (ตามที่ขอเพิ่ม)
+28dee2f51bc4ddba5e7971bb915a97b64c9f3389 87cbb7c89b00701e650ce342e5de8c88ab0d78fe p <polovely55@gmail.com> 1790095333 +0000	commit: ปรับ UI หน้าจอเพิ่มเติมตามฟีดแบ็ก: ลบ BackBtn, ขยายตัวหนังสือ/ป้ายให้ใหญ่ขึ้น
+87cbb7c89b00701e650ce342e5de8c88ab0d78fe b85990a104cc3834070318929031c4821cd6d88c p <polovely55@gmail.com> 1790098413 +0000	commit: build/export ใหม่กันไว้: ปรับ placeholder scale/ตำแหน่ง Battery-Motor ใน Editor ให้ใหญ่ขึ้นและไม่ซ้อนทับกัน (ไม่กระทบ runtime)
+b85990a104cc3834070318929031c4821cd6d88c cdaa68e2903b1675453b77844f3ca3b483dae80d p <polovely55@gmail.com> 1790101186 +0000	commit: fix: แก้ไข Battery/Motor card ซ้อนทับกันจริงบนอุปกรณ์ (runtime fix)
+cdaa68e2903b1675453b77844f3ca3b483dae80d a3675800cac59ab9692e297eb4ad0ab5a4854057 p <polovely55@gmail.com> 1790102875 +0000	commit: fix: แก้ label/value ในการ์ด Battery ทับกัน (Voltage/Temp row ไม่ยืดเต็มความกว้าง)
